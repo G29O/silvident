@@ -63,6 +63,13 @@ body {
     font-size: 18px;
     font-weight: 600;
     flex-shrink: 0;
+    text-decoration: none;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.nav-logo:hover {
+    opacity: 0.85;
 }
 
 .nav-links {
@@ -338,49 +345,7 @@ section {
 
 
 /* ===========================
-   9. LEGAL SECTION
-=========================== */
-.legal {
-    background: #ffffff;
-}
-
-.legal-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    margin-top: 36px;
-}
-
-.legal-item {
-    display: flex;
-    gap: 28px;
-    align-items: flex-start;
-    padding-bottom: 16px;
-    border-bottom: 1px solid #e8f0f8;
-}
-
-.legal-item:last-child {
-    border-bottom: none;
-}
-
-.legal-label {
-    font-size: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: #4a9eda;
-    min-width: 180px;
-    padding-top: 2px;
-}
-
-.legal-value {
-    font-size: 15px;
-    color: #2a4a6a;
-}
-
-
-/* ===========================
-   10. CONTACT SECTION
+   9. CONTACT SECTION
 =========================== */
 .contact {
     background: #f4f8fc;
@@ -475,6 +440,12 @@ section {
 =========================== */
 @media (max-width: 768px) {
 
+    /* Tighter, consistent side padding on phones */
+    .container,
+    .nav-container {
+        padding: 0 20px;
+    }
+
     /* Hide desktop nav links, show hamburger button */
     .nav-links {
         display: none;
@@ -484,66 +455,116 @@ section {
         display: flex;
     }
 
-    /* Smaller hero text on mobile */
+    .nav-right {
+        gap: 12px;
+    }
+
+    /* HERO — centered for a clean, balanced look on mobile */
     .hero {
-        padding: 60px 0;
+        padding: 56px 0;
+        text-align: center;
     }
 
     .hero-title {
-        font-size: 30px;
+        font-size: 28px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .hero-sub {
         font-size: 15px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    /* Sections have less vertical padding on mobile */
+    /* Sections have consistent vertical padding on mobile */
     section {
-        padding: 52px 0;
+        padding: 48px 0;
     }
 
     .section-title {
         font-size: 24px;
+        margin-bottom: 22px;
     }
 
-    /* Service cards: 2 columns on mobile instead of 4 */
+    /* SERVICE CARDS — 2 even columns, centered content, equal height */
     .services-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 12px;
+        margin-top: 4px;
     }
 
     .service-card {
-        padding: 18px;
+        padding: 22px 14px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .service-icon {
-        font-size: 24px;
+        font-size: 26px;
+        margin-bottom: 10px;
     }
 
-    /* Contact items stack vertically on mobile */
+    .service-card h3 {
+        font-size: 15px;
+        margin-bottom: 6px;
+    }
+
+    .service-card p {
+        font-size: 13px;
+    }
+
+    /* ABOUT — comfortable reading size */
+    .about-text {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    /* ACCREDITATION — less padding */
+    .accred-box {
+        padding: 22px;
+    }
+
+    /* CONTACT — each item stacked with a clear label above */
+    .contact-grid {
+        gap: 18px;
+        margin-top: 4px;
+    }
+
     .contact-item {
         flex-direction: column;
-        gap: 4px;
+        gap: 5px;
     }
 
     .contact-label {
         min-width: unset;
     }
 
-    /* Accreditation box less padding on mobile */
-    .accred-box {
-        padding: 24px;
+    /* Hours: day on the left, time on the right, full width */
+    .hours-row {
+        justify-content: space-between;
+        max-width: 280px;
+    }
+
+    .hours-day {
+        min-width: unset;
     }
 }
 
 
-/* Very small phones */
-@media (max-width: 380px) {
+/* Very small phones — single column services */
+@media (max-width: 400px) {
     .services-grid {
         grid-template-columns: 1fr;
     }
 
     .hero-title {
-        font-size: 26px;
+        font-size: 25px;
+    }
+
+    .service-card {
+        padding: 20px;
     }
 }

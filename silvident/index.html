@@ -3,8 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SilviDent — Clinică Stomatologică</title>
+
+    <!-- ========== SEO: page title and description ========== -->
+    <!-- This is the blue clickable title and grey text Google shows in results -->
+    <title>SilviDent — Clinică Stomatologică în Chișinău | Dr. Dumitru Curca</title>
+    <meta name="description" content="SilviDent — clinică stomatologică în Chișinău. Protezare pe implant dentar, tratament dentar fără durere, albire și curățare profesională. Dr. Dumitru Curca, peste 30 de ani de experiență.">
+
+    <!-- Keywords Google and patients may search for -->
+    <meta name="keywords" content="stomatolog Chișinău, clinică stomatologică Chișinău, dentist Chișinău, protezare dentară, implant dentar, tratament dentar fără durere, albire dinți, SilviDent">
+
+    <!-- Tells search engines this is the main address of the site -->
+    <link rel="canonical" href="https://silvident.md/">
+
+    <!-- ========== Social sharing (Facebook, WhatsApp, etc.) ========== -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SilviDent — Clinică Stomatologică în Chișinău">
+    <meta property="og:description" content="Îngrijire dentară profesională în Chișinău. Dr. Dumitru Curca, peste 30 de ani de experiență.">
+    <meta property="og:url" content="https://silvident.md/">
+    <meta property="og:locale" content="ro_RO">
+
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- ========== STRUCTURED DATA (JSON-LD) ==========
+         This block is invisible to visitors. It tells Google exactly
+         what kind of business this is, so Google can show your address,
+         phone, hours and map directly in search results.
+         IMPORTANT: replace the latitude/longitude below with the exact
+         coordinates of the clinic (see instructions Dima was given).
+    ============================================================ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "SilviDent",
+      "description": "Clinică stomatologică privată în Chișinău, condusă de Dr. Dumitru Curca, medic stomatolog cu peste 30 de ani de experiență.",
+      "url": "https://silvident.md/",
+      "telephone": "+37369011412",
+      "email": "dumitrucurca000@gmail.com",
+      "image": "https://silvident.md/",
+      "priceRange": "$$",
+      "currenciesAccepted": "MDL",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "str. Albișoara 16, ap. 71A",
+        "addressLocality": "Chișinău",
+        "addressRegion": "sec. Rîșcani",
+        "postalCode": "MD-2025",
+        "addressCountry": "MD"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "47.0397",
+        "longitude": "28.8350"
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Dr. Dumitru Curca",
+        "jobTitle": "Medic stomatolog"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "08:00",
+          "closes": "19:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "08:00",
+          "closes": "14:00"
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
 
@@ -16,12 +88,13 @@
     <header class="navbar">
         <div class="nav-container">
 
-            <div class="nav-logo">
+            <!-- Logo — clicking it scrolls back to the top of the page -->
+            <a href="#" class="nav-logo" aria-label="SilviDent — acasă">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 2C8 2 5 5 5 8c0 2 .5 3.5 1 5l1 4c.3 1.2 1 2 2 2s1.5-.8 2-2l.5-2c.1-.4.3-.6.5-.6s.4.2.5.6l.5 2c.3 1.2 1 2 2 2s1.7-.8 2-2l1-4c.5-1.5 1-3 1-5 0-3-3-6-7-6z"/>
                 </svg>
                 <span>SilviDent</span>
-            </div>
+            </a>
 
             <!-- Desktop navigation links -->
             <nav class="nav-links">
@@ -116,81 +189,61 @@
 
                 <div class="service-card">
                     <div class="service-icon">🦷</div>
-                    <h3 class="lang-text" data-ro="Consultație" data-ru="Консультация">Consultație</h3>
+                    <h3 class="lang-text" data-ro="Protezare pe implant dentar" data-ru="Протезирование на импланте">Protezare pe implant dentar</h3>
                     <p class="lang-text"
-                       data-ro="Examinare completă a cavității bucale și plan de tratament personalizat."
-                       data-ru="Полный осмотр полости рта и индивидуальный план лечения.">
-                       Examinare completă a cavității bucale și plan de tratament personalizat.
-                    </p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">✨</div>
-                    <h3 class="lang-text" data-ro="Obturații" data-ru="Пломбирование">Obturații</h3>
-                    <p class="lang-text"
-                       data-ro="Tratamentul cariilor cu materiale compozite de înaltă calitate."
-                       data-ru="Лечение кариеса высококачественными композитными материалами.">
-                       Tratamentul cariilor cu materiale compozite de înaltă calitate.
-                    </p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">🔬</div>
-                    <h3 class="lang-text" data-ro="Tratament de canal" data-ru="Лечение каналов">Tratament de canal</h3>
-                    <p class="lang-text"
-                       data-ro="Tratamentul endodontic pentru salvarea dinților afectați de infecție."
-                       data-ru="Эндодонтическое лечение для сохранения зубов, поражённых инфекцией.">
-                       Tratamentul endodontic pentru salvarea dinților afectați de infecție.
-                    </p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">⚕️</div>
-                    <h3 class="lang-text" data-ro="Extracții" data-ru="Удаление зубов">Extracții</h3>
-                    <p class="lang-text"
-                       data-ro="Extracții simple și chirurgicale în condiții de siguranță maximă."
-                       data-ru="Простые и хирургические удаления в условиях максимальной безопасности.">
-                       Extracții simple și chirurgicale în condiții de siguranță maximă.
-                    </p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">🪥</div>
-                    <h3 class="lang-text" data-ro="Igienă profesională" data-ru="Профгигиена">Igienă profesională</h3>
-                    <p class="lang-text"
-                       data-ro="Detartraj și periaj profesional pentru o dentiție sănătoasă."
-                       data-ru="Профессиональная чистка зубов и удаление зубного камня.">
-                       Detartraj și periaj profesional pentru o dentiție sănătoasă.
-                    </p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">💎</div>
-                    <h3 class="lang-text" data-ro="Estetică dentară" data-ru="Эстетическая стоматология">Estetică dentară</h3>
-                    <p class="lang-text"
-                       data-ro="Albire dentară și fațete ceramice pentru un zâmbet impecabil."
-                       data-ru="Отбеливание зубов и керамические виниры для безупречной улыбки.">
-                       Albire dentară și fațete ceramice pentru un zâmbet impecabil.
+                       data-ro="Protezare pe orice tip de implant dentar, pentru restaurarea completă a dinților pierduți."
+                       data-ru="Протезирование на любом типе зубного импланта для полного восстановления утраченных зубов.">
+                       Protezare pe orice tip de implant dentar, pentru restaurarea completă a dinților pierduți.
                     </p>
                 </div>
 
                 <div class="service-card">
                     <div class="service-icon">🦴</div>
-                    <h3 class="lang-text" data-ro="Protetica" data-ru="Протезирование">Protetica</h3>
+                    <h3 class="lang-text" data-ro="Confecționarea protezelor" data-ru="Изготовление протезов">Confecționarea protezelor</h3>
                     <p class="lang-text"
-                       data-ro="Coroane, punți și proteze dentare pentru restaurarea funcției masticatorii."
-                       data-ru="Коронки, мосты и протезы для восстановления жевательной функции.">
-                       Coroane, punți și proteze dentare pentru restaurarea funcției masticatorii.
+                       data-ro="Confecționarea protezelor dentare de orice tip, adaptate individual fiecărui pacient."
+                       data-ru="Изготовление зубных протезов любого типа, индивидуально адаптированных для каждого пациента.">
+                       Confecționarea protezelor dentare de orice tip, adaptate individual fiecărui pacient.
                     </p>
                 </div>
 
                 <div class="service-card">
-                    <div class="service-icon">📋</div>
-                    <h3 class="lang-text" data-ro="Ortodonție" data-ru="Ортодонтия">Ortodonție</h3>
+                    <div class="service-icon">✨</div>
+                    <h3 class="lang-text" data-ro="Tratament fără durere" data-ru="Безболезненное лечение">Tratament fără durere</h3>
                     <p class="lang-text"
-                       data-ro="Corectarea malocluziei dentare pentru o funcție și estetică optimă."
-                       data-ru="Исправление прикуса для оптимальной функции и эстетики.">
-                       Corectarea malocluziei dentare pentru o funcție și estetică optimă.
+                       data-ro="Tratament dentar complet fără durere, într-un mediu calm și confortabil."
+                       data-ru="Полное безболезненное лечение зубов в спокойной и комфортной обстановке.">
+                       Tratament dentar complet fără durere, într-un mediu calm și confortabil.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">💎</div>
+                    <h3 class="lang-text" data-ro="Albire și restaurare" data-ru="Отбеливание и реставрация">Albire și restaurare</h3>
+                    <p class="lang-text"
+                       data-ro="Albirea și restaurarea dinților și a gingiilor pentru un zâmbet sănătos și natural."
+                       data-ru="Отбеливание и реставрация зубов и дёсен для здоровой и естественной улыбки.">
+                       Albirea și restaurarea dinților și a gingiilor pentru un zâmbet sănătos și natural.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🪥</div>
+                    <h3 class="lang-text" data-ro="Curățare profesională" data-ru="Профессиональная чистка">Curățare profesională</h3>
+                    <p class="lang-text"
+                       data-ro="Curățarea profesională a dinților pentru o igienă orală impecabilă și sănătoasă."
+                       data-ru="Профессиональная чистка зубов для безупречной и здоровой гигиены полости рта.">
+                       Curățarea profesională a dinților pentru o igienă orală impecabilă și sănătoasă.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">⚕️</div>
+                    <h3 class="lang-text" data-ro="Și multe altele" data-ru="И многое другое">Și multe altele</h3>
+                    <p class="lang-text"
+                       data-ro="O gamă completă de servicii stomatologice. Contactați-ne pentru detalii și programări."
+                       data-ru="Полный спектр стоматологических услуг. Свяжитесь с нами для получения информации и записи.">
+                       O gamă completă de servicii stomatologice. Contactați-ne pentru detalii și programări.
                     </p>
                 </div>
 
@@ -283,41 +336,6 @@
                             <span class="hours-time contact-closed lang-text" data-ro="Închis" data-ru="Закрыто">Închis</span>
                         </div>
                     </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-    <!-- ======================================================
-         INFORMAȚII LEGALE
-         Fill in the placeholders in [square brackets]
-         once you have the documents from your dad.
-    ====================================================== -->
-    <section class="legal">
-        <div class="container">
-            <h2 class="section-title lang-text" data-ro="Informații legale" data-ru="Правовая информация">Informații legale</h2>
-            <div class="legal-grid">
-
-                <div class="legal-item">
-                    <span class="legal-label lang-text" data-ro="Medic responsabil" data-ru="Ответственный врач">Medic responsabil</span>
-                    <span class="legal-value lang-text" data-ro="Dr. Dumitru Curca — medic stomatolog" data-ru="Dr. Думитру Куркэ — врач-стоматолог">Dr. Dumitru Curca — medic stomatolog</span>
-                </div>
-
-                <div class="legal-item">
-                    <span class="legal-label lang-text" data-ro="Număr licență" data-ru="Номер лицензии">Număr licență</span>
-                    <span class="legal-value">[de completat]</span>
-                </div>
-
-                <div class="legal-item">
-                    <span class="legal-label">IDNO</span>
-                    <span class="legal-value">[de completat]</span>
-                </div>
-
-                <div class="legal-item">
-                    <span class="legal-label lang-text" data-ro="Autorizație sanitară" data-ru="Санитарное разрешение">Autorizație sanitară</span>
-                    <span class="legal-value">[de completat]</span>
                 </div>
 
             </div>
