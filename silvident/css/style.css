@@ -55,7 +55,10 @@ body {
     height: 64px;
 }
 
-.nav-logo {
+.nav-logo,
+.nav-logo:hover,
+.nav-logo:visited,
+.nav-logo:active {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -269,10 +272,10 @@ section {
     background: #f4f8fc;
 }
 
-/* auto-fill = as many columns as fit, each min 240px wide */
+/* CSS Grid: 3 columns for 6 services = 2 even rows */
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     margin-top: 36px;
 }
